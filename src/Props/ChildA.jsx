@@ -1,8 +1,11 @@
 import React from 'react'
+import ChildB from './ChildB';
 
-const ChildA = () => {
+const ChildA = ({name}) => {
   return (
-    <div>ChildA</div>
+    <>
+    <ChildB name={name}/>
+    </>
   )
 }
 

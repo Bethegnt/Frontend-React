@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ChildC = () => {
+const ChildC = ({name}) => {
   return (
-    <div>ChildC</div>
+    <>
+    <h1>Prop drilling name pass from parent component to child C is : {name}</h1>
+    </>
   )
 }
 
