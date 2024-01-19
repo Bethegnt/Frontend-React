@@ -6,6 +6,7 @@ import './App.css';
 // import ChildA from './Props/ChildA';
 // import ChildD from './ContextAPI/ChildD';
 import UseContext from './Hooks/UseContext';
+import UseMemo from './Hooks/UseMemo';
 
 const data = createContext();
 
@@ -27,9 +28,12 @@ function App() {
     </data.Provider> */}
     {/* this above code component for ContextAPI */}
 
-    <data.Provider value={name}>
+    {/* <data.Provider value={name}>
     <UseContext/>
-    </data.Provider>
+    </data.Provider> */}
+    {/* this above code component for useContext */}
+
+    <UseMemo/>
     </>
   );
 }
